@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.3/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <title>Lazy Minter</title>
+</head>
+<body class="body">
+   <div class="container">
+       <div class="row">
+           <div class="title">NFT Minter</div>
+           <div id="success_message"></div>
+           <div id="app" class="col-md-6 offset-md-3">
+            <div class="form-element">
+                <input class="form-control" type="text" id="input_name" name="name" placeholder="NFT name" >
+            </div>
+            <div class="form-element">
+                <input class="form-control" type="text" id="input_description" name="description" placeholder="NFT description" >
+            </div>
+            <div class="form-element">
+                <input class="form-control" type="file" id="input_image" accept="image/png, image/jpeg" name="image" placeholder="NFT description" >
+            </div>
+            <div >
+                <button class="btn btn-primary btn-lg btn-block mt-4" id="submit_button">Submit</button>
+            </div>
+           </div>
+       </div>
+   </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
